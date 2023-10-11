@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <form action="{{ route('products.update', $products->code) }}" method="post">
+                <form action="{{ route('products.update', $products->id) }}" method="post">
                     @csrf
                     @method("PUT")
 
@@ -76,7 +76,7 @@
                     </div>
                     
                     <div class="mb-3 row">
-                        <input type="submit" class="col-md-3 offset-md-5 btn btn-primary" value="Update">
+                        <input type="submit" class="col-md-3 offset-md-5 btn btn-primary" value="update">
                     </div>
                     
                 </form>
